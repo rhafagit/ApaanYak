@@ -116,6 +116,7 @@ include 'fungsi/rupiah.php';
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">Entri Data</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="index.php?user">Data User</a>
+                  <a class="dropdown-item" href="index.php?makanan">Data Makanan</a>
                 </div>
               </div>
               <a class="nav-link nav-item <?= $or ?>" href="index.php?order">Entri Order <span class="sr-only">(current)</span></a>
@@ -148,7 +149,7 @@ include 'fungsi/rupiah.php';
           <ul class="navbar-nav ml-auto">
             <?php if ($_SESSION['level']==""): ?>
               <a href="../auth/index.php" class="nav-item btn btn-success">Login</a>
-            <?php else: ?>786 
+            <?php else: ?>
               <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-user mr-1"></i><?= $_SESSION['level'] ?><span class="mr-1"></span></a>
                 <div class="dropdown-menu">
